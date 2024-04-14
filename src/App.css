@@ -1,0 +1,41 @@
+body{
+  background-color:#e6eef0;/* rgb(241, 244, 247);*/
+}
+.dancing-script{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+}
+.dancing-script-m{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+.carousel{
+  max-width: 1000px !important;
+}
+.sugerencia{
+  position: relative;
+}
+.sugerencia:hover .sugerencia-aclara{
+  display: block;
+}
+.sugerencia-aclara{
+  display:none;
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color:rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  color:black;
+}
+.sugerencia-aclara div{
+  position: absolute;
+  bottom: 5px;
+}
