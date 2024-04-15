@@ -1,6 +1,25 @@
 import CartWidget from './CartWidget'
 import LogoPD from './../assets/images/logopuertodelicia2.png'
 
+const NavBarList = () => {
+  return (
+      <ul className="nav justify-content-center">
+        <li className="nav-item">
+          <a className="nav-link text-dark" href="#">Inicio</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link text-dark" href="#">Tortas y tartas</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link text-dark" href="#">Mini tortas</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link text-dark" href="#">Pequeñas dulzuras</a>
+        </li>
+      </ul>
+  )
+}
+
 const NavBar = () => {
   return (
     <header>
@@ -22,25 +41,6 @@ const NavBar = () => {
       </div>
     </header>
   );
-}
-
-const NavBarList = () => {
-  return (
-      <ul className="nav justify-content-center">
-        <li className="nav-item">
-          <a className="nav-link text-dark" href="#">Inicio</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link text-dark" href="#">Tortas y tartas</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link text-dark" href="#">Mini tortas</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link text-dark" href="#">Pequeñas dulzuras</a>
-        </li>
-      </ul>
-  )
 }
 
 export default NavBar;
