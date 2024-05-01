@@ -1,3 +1,4 @@
+import { Link, NavLink } from 'react-router-dom'
 import CartWidget from './CartWidget'
 import LogoPD from './../assets/images/logopuertodelicia2.png'
 
@@ -5,16 +6,16 @@ const NavBarList = () => {
   return (
       <ul className="nav justify-content-center">
         <li className="nav-item">
-          <a className="nav-link text-dark" href="#">Inicio</a>
+          <NavLink className="nav-link text-dark" to={"/"}>Inicio</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-dark" href="#">Tortas y tartas</a>
+          <NavLink className="nav-link text-dark" to={"/category/tortas"}>Tortas y tartas</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-dark" href="#">Mini tortas</a>
+          <NavLink className="nav-link text-dark" to={"/category/minitortas"}>Mini tortas</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-dark" href="#">Pequeñas dulzuras</a>
+          <NavLink className="nav-link text-dark" to={"/category/peques"}>Pequeñas dulzuras</NavLink>
         </li>
       </ul>
   )
@@ -27,7 +28,9 @@ const NavBar = () => {
         <div className="row">
           <div className="col"></div>
           <div className="col text-center">
-            <img src={LogoPD} alt="Logo Puerto Delicia" width={280} />
+            <Link to={"/"}>
+              <img src={LogoPD} alt="Logo Puerto Delicia" width={280} />
+            </Link>
           </div>  
           <div className="col d-flex align-items-center justify-content-end">
             <CartWidget />

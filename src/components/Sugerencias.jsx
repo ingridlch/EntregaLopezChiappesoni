@@ -17,7 +17,7 @@ const SugerenciasBox = ({producto}) => {
 const Sugerencias = () => {
   const mininaranja = {nombre:"Mini delicia de chocolate y naranja", descripcion:"Base de brownie, suave crema de naranjas, y delicada cubierta de chocolate semi amargo, naranjas confitadas y almendras crocantes.", imagen:"./../../public/images/mininaranja.jpg"};
   const parisbrest = {nombre:"Paris Brest de pistachos y frutos rojos", descripcion:"Masa choux rellena con crema de pistachos y frescos tropezones de frutos rojos: un postre francés que te va a encantar!", imagen:"./../../public/images/parisbrest.jpg"};
-  const baklawa = {nombre:"Baklawa con nueces", descripcion:"Masa filo con relleno de nueces embebido en aromático almíbar con mezcla de especias: una dulce exquisitez del lejano oriente.", imagen:"./../../public/images/baklawa.jpg"};
+  const baklawa = {nombre:"Baklawa con nueces", descripcion:"Masa filo con relleno de nueces embebido en aromático almíbar con mezcla de especias: una dulce exquisitez del lejano oriente.", imagen:"./../../public/images/pr2.jpg"};
   return (
     <div className="container-lg bg-light rounded p-2">
       <div className="row">

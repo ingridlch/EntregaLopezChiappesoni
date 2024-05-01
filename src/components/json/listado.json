@@ -1,0 +1,242 @@
+[
+  {
+    "id"          : 1,
+    "title"       : "Selva negra",
+    "description" : "La infalible combinación de la cereza, el kirsch, la crema de leche y el chocolate hacen de esta torta una irresistible tentación. Un clásico de la pastelería alemana cuyo origen se pierde cuando el chocolate ya se había asentado en los paladares europeos.",
+    "categoria"   : "tortas",
+    "price"       : 33000,
+    "pictureUrl"  : "./../../public/images/pr1.jpg",
+    "sugerido"    : 0,
+    "stock"       : 5
+  },
+  {
+    "id"          : 2,
+    "title"       : "Baklawa",
+    "description" : "Masa filo con relleno de nueces embebido en aromático almíbar con mezcla de especias: una dulce exquisitez del lejano oriente.",
+    "categoria"   : "tortas",
+    "price"       : 34000,
+    "pictureUrl"  : "./../../public/images/pr2.jpg",
+    "sugerido"    : 1,
+    "stock"       : 7
+  },
+  {
+    "id"          : 3,
+    "title"       : "Años locos",
+    "description" : "Una torta súper tentadora compueta por una base de brownie, una capa de dulce de leche y copos de merengue italiano o mouse de frutillas.",
+    "categoria"   : "tortas",
+    "price"       : 29000,
+    "pictureUrl"  : "./../../public/images/pr3.jpg",
+    "sugerido"    : 0,
+    "stock"       : 7
+  },
+  {
+    "id"          : 4,
+    "title"       : "Red velvet",
+    "description" : "El pastel de terciopelo rojo compuesto por un bizcochuelo de vibrante color y sabor combinado con una ganache de chocolate blanco deliciosa.",
+    "categoria"   : "tortas",
+    "price"       : 28000,
+    "pictureUrl"  : "./../../public/images/pr4.jpg",
+    "sugerido"    : 0,
+    "stock"       : 5
+  },
+  {
+    "id"          : 5,
+    "title"       : "Rogel",
+    "description" : "Varias capas de masa rellenas con dulce de leche y cubiertas con merengue italiano, una exquisitez de la pastelería argentina!",
+    "categoria"   : "tortas",
+    "price"       : 25000,
+    "pictureUrl"  : "./../../public/images/pr5.jpg",
+    "sugerido"    : 0,
+    "stock"       : 8
+  },
+  {
+    "id"          : 6,
+    "title"       : "Tarta bombón",
+    "description" : "Masa sablée de cacao relleno con dulce de leche y cubierta de chocolate. Una mezcla de texturas y sabores irresistibles!",
+    "categoria"   : "tortas",
+    "price"       : 30000,
+    "pictureUrl"  : "./../../public/images/pr6.jpg",
+    "sugerido"    : 0,
+    "stock"       : 10
+  },
+  {
+    "id"          : 7,
+    "title"       : "Pie de limón",
+    "description" : "Con una base de masa dulce y relleno de limón se crea este postre cítrico, fresco y encantador!",
+    "categoria"   : "tortas",
+    "price"       : 28000,
+    "pictureUrl"  : "./../../public/images/pr7.jpg",
+    "sugerido"    : 0,
+    "stock"       : 5
+  },
+  {
+    "id"          : 8,
+    "title"       : "Torta chocolatosa",
+    "description" : "Una delicia compuesta de bizcochuelos de chocolate y rellenos de mouse de chocolate",
+    "categoria"   : "tortas",
+    "price"       : 32000,
+    "pictureUrl"  : "./../../public/images/pr8.jpg",
+    "sugerido"    : 0,
+    "stock"       : 10
+  },
+  {
+    "id"          : 9,
+    "title"       : "Delicia naranja y choco",
+    "description" : "Base de brownie, suave crema de naranjas, y delicada cubierta de chocolate semi amargo, naranjas confitadas y almendras crocantes.",
+    "categoria"   : "minitortas",
+    "price"       : 9000,
+    "pictureUrl"  : "./../../public/images/pr9.jpg",
+    "sugerido"    : 1,
+    "stock"       : 15
+  },
+  {
+    "id"          : 10,
+    "title"       : "Delicia de coco",
+    "description" : "Base de brownie, suave crema de coco, combinado con dulce de leche o ananá. Combinaciones distintas y exquisitas!",
+    "categoria"   : "minitortas",
+    "price"       : 9000,
+    "pictureUrl"  : "./../../public/images/pr10.jpg",
+    "sugerido"    : 0,
+    "stock"       : 15
+  },
+  {
+    "id"          : 11,
+    "title"       : "Cheesecake con frutos rojos",
+    "description" : "El exquisito sabor del queso protagoniza esta mini torta en una crema liviana coronada por una mermelada de frutos rojos que componen una delicia para cualquier paladar.",
+    "categoria"   : "minitortas",
+    "price"       : 9500,
+    "pictureUrl"  : "./../../public/images/pr11.jpg",
+    "sugerido"    : 0,
+    "stock"       : 10
+  },
+  {
+    "id"          : 12,
+    "title"       : "Charlotte",
+    "description" : "Postre inglés a base de vainillas con suave mouse y frutas frescas",
+    "categoria"   : "minitortas",
+    "price"       : 9500,
+    "pictureUrl"  : "./../../public/images/pr12.jpg",
+    "sugerido"    : 0,
+    "stock"       : 8
+  },
+  {
+    "id"          : 13,
+    "title"       : "Torta galesa",
+    "description" : "De sabor exquisito y humedad característica, combina nueces, pasas de uva y frutas maceradas junto con licores y especias. Ideal para para acompañarla con té o café.",
+    "categoria"   : "minitortas",
+    "price"       : 15000,
+    "pictureUrl"  : "./../../public/images/pr13.jpg",
+    "sugerido"    : 0,
+    "stock"       : 20
+  },
+  {
+    "id"          : 14,
+    "title"       : "Pavlovita",
+    "description" : "Con base de merengue crujiente por fuera, cremoso y liviano por dentro, con un toque cítrico combinado con frutas de estación",
+    "categoria"   : "minitortas",
+    "price"       : 8500,
+    "pictureUrl"  : "./../../public/images/pr14.jpg",
+    "sugerido"    : 0,
+    "stock"       : 12
+  },
+  {
+    "id"          : 15,
+    "title"       : "Paris brest pistachos y rojos",
+    "description" : "Masa choux rellena con crema de pistachos y frescos tropezones de frutos rojos: un postre francés que te va a encantar!",
+    "categoria"   : "minitortas",
+    "price"       : 9500,
+    "pictureUrl"  : "./../../public/images/pr15.jpg",
+    "sugerido"    : 1,
+    "stock"       : 20
+  },
+  {
+    "id"          : 16,
+    "title"       : "Tarteletas de frutos secos",
+    "description" : "El relleno de frutos secos en un suave caramelo convierten a esta tarteleta en un distinguido postre.",
+    "categoria"   : "minitortas",
+    "price"       : 9500,
+    "pictureUrl"  : "./../../public/images/pr16.jpg",
+    "sugerido"    : 0,
+    "stock"       : 20
+  },
+  {
+    "id"          : 17,
+    "title"       : "Alfajores de maicena",
+    "description" : "Los clásicos con relleno de dulce de leche y coco rallado en los laterales. Box x 6 unidades",
+    "categoria"   : "peques",
+    "price"       : 4000,
+    "pictureUrl"  : "./../../public/images/pr17.jpg",
+    "sugerido"    : 0,
+    "stock"       : 20
+  },
+  {
+    "id"          : 18,
+    "title"       : "Cocadas rellenas",
+    "description" : "Cocadas rellenas de dulce de leche: riquísimos!. Box x 6 unidades",
+    "categoria"   : "peques",
+    "price"       : 4000,
+    "pictureUrl"  : "./../../public/images/pr18.jpg",
+    "sugerido"    : 0,
+    "stock"       : 20
+  },
+  {
+    "id"          : 19,
+    "title"       : "Macarons",
+    "description" : "Delicia francesa de coloridas tapas con harina de almendras relleno de ganaches, en sabores surtidos. Box x 6 unidades",
+    "categoria"   : "peques",
+    "price"       : 12000,
+    "pictureUrl"  : "./../../public/images/pr19.jpg",
+    "sugerido"    : 0,
+    "stock"       : 15
+  },
+  {
+    "id"          : 20,
+    "title"       : "Alfajores de amoniaco",
+    "description" : "Para algunos un clásico de la infancia, surtidos con rellenos de dulce de leche o mermelada. Box x 6 unidades",
+    "categoria"   : "peques",
+    "price"       : 5000,
+    "pictureUrl"  : "./../../public/images/pr20.jpg",
+    "sugerido"    : 0,
+    "stock"       : 20
+  },
+  {
+    "id"          : 21,
+    "title"       : "Barras de chocolate",
+    "description" : "Barras de chocolate artesanales con variedad de frutos. Box x 2 unidades",
+    "categoria"   : "peques",
+    "price"       : 5000,
+    "pictureUrl"  : "./../../public/images/pr21.jpg",
+    "sugerido"    : 0,
+    "stock"       : 25
+  },
+  {
+    "id"          : 22,
+    "title"       : "Trufas",
+    "description" : "Trufas con variedad de sabor y cobertura. Box x 12 unidades",
+    "categoria"   : "peques",
+    "price"       : 5000,
+    "pictureUrl"  : "./../../public/images/pr22.jpg",
+    "sugerido"    : 0,
+    "stock"       : 20
+  },
+  {
+    "id"          : 23,
+    "title"       : "Conitos de dulce de leche",
+    "description" : "Deliciosos conitos de dulce de leche con baño de chocolate semiamargo. Box x 6 unidades",
+    "categoria"   : "peques",
+    "price"       : 9000,
+    "pictureUrl"  : "./../../public/images/pr23.jpg",
+    "sugerido"    : 1,
+    "stock"       : 10
+  },
+  {
+    "id"          : 24,
+    "title"       : "Bombones artesanales",
+    "description" : "Variedad de bombones en chocolate semiamargo, con leche y blanco, con rellenos de distintos sabores. Box x 20 unidades",
+    "categoria"   : "peques",
+    "price"       : 5000,
+    "pictureUrl"  : "./../../public/images/pr24.jpg",
+    "sugerido"    : 0,
+    "stock"       : 25
+  }
+]
