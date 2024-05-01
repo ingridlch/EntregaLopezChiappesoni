@@ -32,7 +32,7 @@ const ItemCount = ({stockProducto}) => {
         <button type="button" className="btn btn-outline-dark">{cantidad}</button>
         <button type="button" className="btn btn-outline-dark" onClick={sumar}>+</button>
       </div>
-      <button className={`btn m-2 btn-outline-${stock>0 ? 'dark' : 'secondary'}`} onClick={onAdd}>Agregar al carrito</button>
+      <button className={`btn m-2 btn-outline-${stock>0 ? 'dark' : 'secondary'}`} onClick={onAdd} disabled={ !(stock>0) } >Agregar al carrito</button>
       
     </>
   )
