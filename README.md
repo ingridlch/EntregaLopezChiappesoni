@@ -2,4 +2,4 @@
 
 <h5>Navegabilidad de la aplicación</h5>
 
-<img src="./public/images/navega.jpg" alt="navegabilidad de aplicación" />
+<img src="./public/images/navega.gif" alt="navegabilidad de aplicación" />
