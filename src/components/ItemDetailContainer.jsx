@@ -1,29 +1,30 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import listado from "./json/listado.json";
+import { doc, getDoc, getFirestore } from "firebase/firestore";
 import ItemDetail from "./ItemDetail";
 import Cargando from "./Cargando";
-import Error404 from "./Error404";
+import Error from "./Error";
 
 const ItemDetailContainer = () => {
-  const [producto, setProducto] = useState([]);
+  const [producto, setProducto] = useState(null);
   const [cargando, setCargando] = useState(false);
   const {id} = useParams();
 
+  /* producto vía firebase */
   useEffect(()=>{
     setCargando(true);
-    const getProducto = new Promise(resolve =>{
-      setTimeout(()=>{
-        resolve(listado.find(p =>p.id===parseInt(id)));
-      },2000)
+    const db  = getFirestore();
+    const pro = doc(db, "items", id);
+    getDoc(pro)
+    .then(snapshot=>{
+      if(snapshot.exists()){
+        setProducto({id:snapshot.id, ...snapshot.data()});
+      } else { console.log('no encontro')
+        setProducto(null);
+      }
     })
-    console.log('ItemDetailContainer: '+id);
-    getProducto.then(resp =>{
-      setProducto(resp);
-      setCargando(false);
-    })
-
-  },[id])
+    .finally(()=>{setCargando(false);});
+  }, [id]);
 
 
   return (
@@ -32,7 +33,10 @@ const ItemDetailContainer = () => {
         { /* muestra si está cargando */
           cargando ? <Cargando /> : 
           /* al terminar la búsqueda si encontró el producto lo muestra, y si no indica que no está la página solicitada */
-          (producto ? <div className="col"><ItemDetail producto={producto} /></div> : <Error404 />)
+          (producto 
+            ? <div className="col"><ItemDetail producto={producto} /></div> 
+            : <Error mensaje="No se encontró el producto" />
+          )
         }
       </div>
     </div>

@@ -4,19 +4,26 @@ import Footer from './components/Footer'
 import ItemListContainer from './components/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer'
 import NavBar from './components/NavBar'
-import Error404 from './components/Error404';
+import Error from './components/Error';
+import CartContextProvider from './components/context/CartContext';
+import Cart from './components/Cart';
+import Checkout from './components/Checkout';
 
 function App() {
   const mensaje = "¿Y si probás nuestras delicias?";
   return (
     <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path={"/"} element={<ItemListContainer mensaje={mensaje} />} />
-        <Route path={"/category/:id"} element={<ItemListContainer mensaje={mensaje} />} />
-        <Route path={"/item/:id"} element={<ItemDetailContainer />} />
-        <Route path={"/*"} element={<Error404 />} />
-      </Routes>
+      <CartContextProvider>
+        <NavBar />
+        <Routes>
+          <Route path={"/"} element={<ItemListContainer mensaje={mensaje} />} />
+          <Route path={"/category/:id"} element={<ItemListContainer mensaje={mensaje} />} />
+          <Route path={"/item/:id"} element={<ItemDetailContainer />} />
+          <Route path={"/cart"} element={<Cart />} />
+          <Route path={"/checkout"} element={<Checkout />} />
+          <Route path={"/*"} element={<Error />} />
+        </Routes>
+      </CartContextProvider>
       <Footer />
     </BrowserRouter>
   )

@@ -1,27 +1,31 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { collection, getDocs, getFirestore, query, where } from "firebase/firestore";
 import ItemList from "./ItemList";
 import Carousel from "./Carousel";
 import Cargando from "./Cargando";
-import listado from "./json/listado.json";
 
 const ItemListContainer = ({mensaje}) => {
   const [productosList, setProductosList] = useState([]);
   const [cargando, setCargando] = useState(false);
   const {id} = useParams();
 
+  /* productos vía firebase */
   useEffect(()=>{
     setCargando(true);
-    const getProductos = new Promise(resolve =>{
-      setTimeout(()=>{// si no se pasa la categoría filtra productos sugeridos
-        resolve(id ? listado.filter(p => p.categoria===id) : listado.filter(p => p.sugerido===1));
-      }, 2000)
+    const db  = getFirestore();
+    const coll = collection(db,"items");
+    const q = id ? query(coll, where("categoria","==", id)) : query(coll, where("sugerido","==", true));
+    getDocs(q)
+    .then(snapshot=>{
+      if(snapshot.size>0){
+        setProductosList(snapshot.docs.map(item=>({id:item.id, ...item.data()})));
+      } else {
+        setProductosList([]);
+      }
     })
-    console.log('entra '+id);
-    getProductos.then(resp=>{
-      setProductosList(resp);
-      setCargando(false);
-    })
+    .finally(()=>{setCargando(false);});
+    
   }, [id]);
 
   return (
