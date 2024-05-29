@@ -52,7 +52,7 @@ const Checkout = ()=>{
                   </div>
                   <div className="mb-1">
                     <label className="form-label">Teléfono</label>
-                    <input type="text" className="form-control" onInput={({target})=>{setPhone(target.value);setMsg("")}} onKeyDown={(e) => {if(!(/[0-9]/.test(e.key)||e.key==="Backspace"||e.key==="Delete"||e.key==="ArrowLeft"||e.key==="ArrowRight"))e.preventDefault()}} />
+                    <input type="text" className="form-control" onInput={({target})=>{setPhone(target.value);setMsg("")}} onKeyDown={(e) => {console.log(e.key);if(!(/[0-9]/.test(e.key)||e.key==="Backspace"||e.key==="Delete"||e.key==="ArrowLeft"||e.key==="ArrowRight"||e.key==="Tab"))e.preventDefault()}} />
                   </div>
                   <div className="mb-1">
                     <label className="form-label">Email</label>

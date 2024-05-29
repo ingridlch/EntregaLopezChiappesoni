@@ -9,7 +9,7 @@ const ItemDetail = ({producto})=>{
 
   const onAdd = (cantidad)=>{
     setCantidadAgregada(cantidad);
-    console.log('Se agregaron '+cantidad);
+    // Se agrega el producto al carrito con la cantidad recibida como parametro
     addItem({id:producto.id,name:producto.title,price:producto.price,img:producto.pictureUrl},cantidad);
   }
 

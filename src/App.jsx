@@ -12,8 +12,8 @@ import Checkout from './components/Checkout';
 function App() {
   const mensaje = "¿Y si probás nuestras delicias?";
   return (
-    <BrowserRouter>
-      <CartContextProvider>
+    <CartContextProvider>
+      <BrowserRouter>
         <NavBar />
         <Routes>
           <Route path={"/"} element={<ItemListContainer mensaje={mensaje} />} />
@@ -23,9 +23,9 @@ function App() {
           <Route path={"/checkout"} element={<Checkout />} />
           <Route path={"/*"} element={<Error />} />
         </Routes>
-      </CartContextProvider>
-      <Footer />
-    </BrowserRouter>
+        <Footer />
+      </BrowserRouter>
+    </CartContextProvider>  
   )
 }
 export default App
