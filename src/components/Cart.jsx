@@ -32,7 +32,7 @@ const Cart = () => {
             <tbody>
               {cart.map(item =>(
                   <tr key={item.id}>
-                    <td><img src={`./../../public/images/${item.img}.jpg`} alt={item.name} width={70} /></td>
+                    <td><img src={`/images/${item.img}.jpg`} alt={item.name} width={70} /></td>
                     <td>{item.name}</td>
                     <td className="text-end">{item.quantity} x</td>
                     <td className="text-end">$ {item.price}</td>

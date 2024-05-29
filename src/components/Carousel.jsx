@@ -6,16 +6,16 @@ const Carousel = () => {
         <div id="carouselExampleAutoplaying" className="carousel slide mx-auto" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="./../../public/images/carousel11.jpg" className="d-block w-100" alt="Selva negra" />
+              <img src="/images/carousel11.jpg" className="d-block w-100" alt="Selva negra" />
             </div>
             <div className="carousel-item">
-              <img src="./../../public/images/carousel12.jpg" className="d-block w-100" alt="Pie de limón" />
+              <img src="/images/carousel12.jpg" className="d-block w-100" alt="Pie de limón" />
             </div>
             <div className="carousel-item">
-              <img src="./../../public/images/carousel13.jpg" className="d-block w-100" alt="Mini cheese cake" />
+              <img src="/images/carousel13.jpg" className="d-block w-100" alt="Mini cheese cake" />
             </div>
             <div className="carousel-item">
-              <img src="./../../public/images/carousel14.jpg" className="d-block w-100" alt="Macarons" />
+              <img src="/images/carousel14.jpg" className="d-block w-100" alt="Macarons" />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">

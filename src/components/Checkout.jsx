@@ -81,7 +81,7 @@ const Checkout = ()=>{
                   <tbody>
                     {cart.map(item =>(
                         <tr key={item.id}>
-                          <td><img src={`./../../public/images/${item.img}.jpg`} alt={item.name} width={50} /></td>
+                          <td><img src={`/images/${item.img}.jpg`} alt={item.name} width={50} /></td>
                           <td>{item.name}</td>
                           <td className="text-end">{item.quantity} x</td>
                           <td className="text-end">$ {item.price}</td>
